@@ -1,38 +1,83 @@
+# =========================
+# Maven / Java
+# =========================
 target/
+**/target/
+*.class
+*.jar
+*.war
+*.ear
+*.log
+
+# Maven Wrapper (оставляем wrapper jar, он нужен)
 !.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
 
-### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
-*.iws
+# =========================
+# IntelliJ IDEA
+# =========================
+.idea/
 *.iml
+*.iws
 *.ipr
+out/
 
-### Eclipse ###
-.apt_generated
+# если хочешь оставить часть конфигов (опционально)
+!.idea/misc.xml
+!.idea/modules.xml
+
+# =========================
+# Eclipse / STS
+# =========================
 .classpath
-.factorypath
 .project
-.settings
+.settings/
+.factorypath
 .springBeans
 .sts4-cache
 
-### NetBeans ###
+# =========================
+# NetBeans
+# =========================
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
+
+# =========================
+# Gradle (на всякий случай)
+# =========================
+.gradle/
 build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-### VS Code ###
+# =========================
+# VS Code
+# =========================
 .vscode/
 
-### Mac OS ###
+# =========================
+# OS files
+# =========================
 .DS_Store
+Thumbs.db
+
+# =========================
+# Logs / temp
+# =========================
+*.log
+*.tmp
+*.bak
+
+# =========================
+# Spring Boot
+# =========================
+/logs/
+/application-local.properties
+/application-dev.properties
+
+# =========================
+# Environment files
+# =========================
+.env
